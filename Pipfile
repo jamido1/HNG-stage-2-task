@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+asgiref = "*"
 django = "*"
 dj-database-url = "*"
 django-crispy-forms ="*"
