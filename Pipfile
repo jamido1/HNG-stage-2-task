@@ -10,6 +10,7 @@ django-crispy-forms ="*"
 Pillow = "*"
 psycopg2 = "*"
 whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
