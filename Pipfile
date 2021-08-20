@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 dj-database-url = "*"
 django-crispy-forms ="*"
+Pillow = "*"
+psycopg2 = "*"
+whitenoise = "*"
 
 [dev-packages]
 
