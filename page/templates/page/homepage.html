@@ -1,184 +1,214 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Resume Onyishi James</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-    <!-- Bootstrap CSS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js"></script>
-  </head>
-  <body>
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                      <li><a href="#about">PROFILE</a></li>
-                      <li><a href="#skills">SKILLS</a></li>
-                      <li><a href="#experience">EXPERIENCE</a></li>
-                      <li><a href="#education">EDUCATION</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="static/css/style.css">
 
-                  </ul>
-              </div>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-      </nav>
-      <section id="about" class="container-fluid">
-          <div class="col-xs-8 col-md-4 profile-picture">
-              <img src="../static/image/gg.jpg" alt="Marc" class="img-circle">
-          </div>
-          <div class="heading">
-              <h1>Hello, I am Onyishi James  </h1>
-              <h3>Aspiring DevOps Engineer</h3>
-              <a href="../static/doc/jm.pdf" class="button1">Download resume</a>
-              <A HREF="contact" LINK="white" class="button1"> Reach me here...</A>
-          </div>
-      </section>
-      <section id="skills">
-          <div class="divider"></div>
-          <div class="heading">
-              <h2>SKILLS</h2>
-          </div>
-              <div class="container -fluid">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemax="100" style="width: 85%;">
-                            <h5>Communication and Presentation 60%</h5>
-                        </div>
-                          </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemax="100" style="width: 60%;">
-                                <h5>Python and Java 45%</h5>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemax="100" style="width: 40%;">
-                                <h5> Computer repairs and troubleshooting 50%</h5>
-                            </div>
-                        </div>
+        <title>Onyishi's Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Onyishi's portfolio</a>
+                </div>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-                      </div>
-                      <div class="col-md-6">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemax="100" style="width: 20%;">
-                                <h5>Cloud computing 50%</h5>
-                            </div>
-                        </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemax="100" style="width: 60%;">
-                                <h5> Observation, data collection, analysis and interpretation 45%</h5>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemax="100" style="width: 60%;">
-                                <h5>Microsoft office 55%</h5>
-                            </div>
-                        </div>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Onyishi James</span><br>Backend Developer</h1>
 
+                     <a href="../static/doc/jm.pdf" class="button">Download resume</a>         <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/james-onyishi/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.github.com/jamido1/" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="../static/image/gg.jpg" style="height:400px; border-radius: 60%; border: 5px solid #4070F4;" alt="This is my profile picture">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="static/image/gg.jpg" alt="">
                     </div>
-                  </div>
-              </div>
 
-
-      </section>
-
-    <section id="experience">
-        <div class="divider"></div>
-        <div class="container">
-            <div class="white-divider"></div>
-            <div class="heading">
-                    <h2>EXPERIENCE</h2>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
-                    <div class="timeline-panel-container">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>Google Inc</h3>
-                                <h4> Cloud computing intern</h4>
-                                <p class="text-muted"><small class="glyphicon glyphicon-time">May2021-present</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Was exposed to IAAS, PAAS, CAAS, FAAS</p>
-                                <p>Cloud networking, Cloud filing system, Storage capabilities e.t.c. </p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li id="second_panel">
-                    <div class="timeline-badge"><span class="glyphicon glyphicon-briefcase"></span></div>
-                    <div class="timeline-panel-container-inverted">
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h3>ZURI Inc</h3>
-                                <h4> Python web development( Intern )</h4>
-                                <p class="text-muted"><small class="glyphicon glyphicon-time">March2021-May2021</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Responsibilities:</p>
-                                <p>Developing my programming skills</p>
-                                <p>Integration tests and functional tests(Python)</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section id="education">
-        <div class="divider"></div>
-        <div class="heading">
-            <h2>EDUCATION</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="education-block">
-                        <h5>2015-2019</h5>
-                        <span class="glyphicon glyphicon-education"></span>
-                        <h3>UNIVERSITY OF IBADAN, IBADAN. NIGERIA</h3>
-                        <h4>BSc(hons) Geology</h4>
-                        <div class="divider"></div>
-                        <p>Petroleum geology, Tectonophysics, Hydrogeology</p>
-                        <p>Mining, Geophysics e.t.c.</p>
-                        <p></p>
+                    <div>
+                        <h2 class="about__subtitle">I am <span class="home__title-color">Onyishi James</span> alias Jamido </h2>
+                        <p class="about__text">I am  a backend developer and a google scholar currently undergoing lectures to become an associate cloud engineer, I have experience in using python and java to deliver working projects . I love to work with a focused team because I am most productive when the task ahead is clear and I am not being micro-managed; I prioritize learning and self-development because I can only offer what I know .</p>
                     </div>
                 </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">Apart from the major technical skills that I listed in the graphs below, I am also good in team building, I have good communication and presentation skills, I love seeing tasks through to completion. </p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-google-cloud skills__icon'></i>
+                                <span class="skills__name">GOOGLE CLOUD</span>
+                            </div>
+                            <div class="skills__bar skills__gcl">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">45%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-django skills__icon'></i>
+                                <span class="skills__name">DJANGO</span>
+                            </div>
+                            <div class="skills__bar skills__dj">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__py">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="static/image/b3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="static/image/b4.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="static/image/b5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="static/image/b6.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="static/image/b5.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="static/image/b6.JPG" alt="">
+                    </div>
+                    <div class="work__img">
+                        <img src="static/image/b4.JPG" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form method="post" class="was-validated">
+                        {% csrf_token %}
+                        <input name="name" type="text" placeholder="Name" class="contact__input" required>
+                        <input name="email" type="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" id="" cols="0" placeholder="Write here........" rows="6" class="contact__input" required></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Jamido</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/james-christopher/" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/lightercustodian/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.twitter.com/jamido/" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
+            <div class="col-xs-8 col-md-4 profile-picture">
+        <img src="../static/image/hng.png" style="height:40px; border-radius: 5%; border: 0px solid #4070F4;alt=">
 
         </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
 
-    </section>
-    <footer class="text-center">
-        <a href="#about"></a>
-        <span class="glyphicon glyphicon-chevron-up"></span>
-        <h5>James's portfolio</h5>
 
-        <div class="col-xs-8 col-md-4 profile-picture">
-        <img src="../static/image/hng.png" alt="Marc" class="img-box">  <img src="../static/image/zuri.png" alt="Marc" class="img-box">  <img src="../static/image/I4G.png" alt="Marc" class="img-box">
-        </div>
-    </footer>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+        <!--===== MAIN JS =====-->
+        <script src="static/js/main.js"></script>
+    </body>
+    </html>
